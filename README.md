@@ -25,6 +25,8 @@ npm run inngest                 # Inngest dev server on http://localhost:8288
 
 `npm run inngest` runs the CLI from `inngest-cli` (a dev dependency). npm 12 blocks install scripts, so if `node_modules/inngest-cli/bin/inngest` is missing run `node node_modules/inngest-cli/postinstall.js` once to download it. Alternative: `npx inngest-cli@latest dev -u http://localhost:3000/api/inngest`.
 
+Checks: `npm run typecheck` (runs `next typegen` first; Next 16 generates the `LayoutProps` types) and `npm run lint`.
+
 Open http://localhost:3000, press **Run**, and watch the nodes light up. The Inngest dashboard at http://localhost:8288 shows each run and its steps.
 
 ### Environment variables
